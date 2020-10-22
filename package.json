@@ -1,6 +1,6 @@
 {
   "name": "react-ant-form-validation",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This library is used for binding react form inputs with yup validation",
   "author": "Mohammad-faisal",
   "license": "",
