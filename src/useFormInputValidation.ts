@@ -10,7 +10,7 @@ export default function useFormInputValidation (INITIAL_STATE ={} , validationSc
   const [hasError , setHasError] = useState(false);
   const [errors , setErrors] = useState({});
 
-  const handleInputChange = (name , value) => {
+  const handleInputChange = (name: string , value:string ) => {
     setValues({
         ...values , [name] :value
       }
@@ -20,12 +20,12 @@ export default function useFormInputValidation (INITIAL_STATE ={} , validationSc
     })
   };
 
-  const setAllValues = (newValues) => {
+  const setAllValues = (newValues : object) => {
     setValues( newValues);
   };
 
 
-  const setValue = (name , value) => {
+  const setValue = (name : string  , value : string ) => {
     setValues({
         ...values , [name] :value
       }
@@ -33,7 +33,7 @@ export default function useFormInputValidation (INITIAL_STATE ={} , validationSc
   };
 
 
-  const handleSubmit = (onSubmit) => {
+  const handleSubmit = (onSubmit ) => {
     if(!hasError){
       onSubmit();
     }
