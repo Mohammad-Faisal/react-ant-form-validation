@@ -1,6 +1,5 @@
-import { ExampleComponent } from '.'
 
-describe('ExampleComponent', () => {
+describe('test nothing', () => {
   it('is truthy', () => {
     expect(true).toBeTruthy()
   })
